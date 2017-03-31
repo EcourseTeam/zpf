@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.ecourse.activity.Register">
+
+    <!--<Button-->
+        <!--android:id="@+id/button_clear"-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_height="20dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:text="注销"-->
+        <!--android:textSize="12dp"-->
+        <!--android:background="@android:color/transparent"/>-->
+    <TextView
+        android:id="@+id/lableView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="注册界面" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lableView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:hint="用户名"
+        android:drawableLeft="@android:drawable/ic_lock_idle_charging" />
+
+    <EditText
+        android:id="@+id/nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:hint="昵称"
+        android:drawableLeft="@android:drawable/ic_lock_idle_charging" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nickname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:drawableLeft="@android:drawable/ic_lock_idle_lock" />
+
+    <EditText
+        android:id="@+id/school_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:hint="学校"
+        android:drawableLeft="@android:drawable/ic_lock_idle_charging" />
+
+    <EditText
+        android:id="@+id/student_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/school_id"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:hint="学号"
+        android:drawableLeft="@android:drawable/ic_lock_idle_charging" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/student_num"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:hint="邮箱"
+        android:drawableLeft="@android:drawable/ic_lock_idle_charging" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email">
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="返回" />
+
+        <!--<Button-->
+            <!--android:id="@+id/button_ok"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="登录"-->
+            <!--android:layout_toLeftOf="@+id/button_back" />-->
+
+        <Button
+            android:id="@+id/button_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:layout_toLeftOf="@+id/button_back"/>
+    </RelativeLayout>
+</RelativeLayout>
